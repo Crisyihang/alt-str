@@ -1,0 +1,210 @@
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+    color: #666;
+    font-family: "SourceHanSansCN-Light","Lantinghei SC","Open Sans","Hiragino Sans GB","Microsoft YaHei","STHeiti-Light","WenQuanYi Micro Hei","Arial","SimSun","sans-serif";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.45;
+    background-color: #f2f2f2;
+}
+a{
+	transition: all 0.5s ease 0s;
+}
+a:hover{
+	text-decoration: none;
+}
+
+sup{
+	background-color: #00B08C;
+	display: block;
+	height: 2px;
+	margin: 0 auto;
+	transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+	width: 0px;
+	top: 0.5em;
+}
+sup.active{
+	width: 100%;
+}
+ul li{
+	list-style: none;
+}
+ul.nav li:hover sup{
+	width:100%;
+}
+.overs{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+    display:block;
+}
+
+
+/** index **/
+
+/* header */
+.header{
+	height: 90px;
+	background-color: #fff;
+	width: 100%;
+}
+.pc_logo{
+	background-image: url("../img/logo.png");
+	width: 122px;
+	height: 38px;
+	margin-top: 24px;
+}
+.search{
+	width: 84%;
+	height: 48px;
+	border:1px solid #d2d2d2;
+	text-indent: 10px;
+	background-color: #f1f1f1;
+	float: left;
+}
+.btn{
+	background-color: #0065ce;
+	height: 48px;
+	width: 16%;
+	border-radius: 0px;
+	float: left;
+}
+.form_input{
+	display: inline-block;
+    float: left;
+    margin-left: 20%;
+    margin-top: 20px;
+    width: 40%;
+    min-width: 280px;
+}
+.pl_ri{
+	float: right;
+	height: 90px;
+	line-height: 90px;
+}
+.pl_ri_fi{
+	font-size:1.2em;
+}
+.pl_ri_sc{
+	font-size:1.2em;
+}
+/* nav */
+.navbar{
+	margin-bottom: 0;
+	border:none;
+	border-radius: 0;
+}
+.navbar-default{
+	background-color: #0065ce;
+	border-color: none;
+}
+.nav > li > a{
+	padding: 15px 40px;
+}
+.navbar-default .navbar-nav > li > a{
+	color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	background-color: #00a0e9;
+	color:#fff;
+}
+
+/* banner */
+#banner .banner-item:nth-child(1) .banner-img{
+	background-image: url('../img/banner-1.jpg');
+}
+#banner .banner-item:nth-child(2) .banner-img{
+	background-image: url('../img/banner-2.jpg');
+}
+
+/* section_1 */
+.introduction{
+	padding: 20px 0;
+}
+.icon_global{
+	background: url('../img/global_img.png') -17px -22px no-repeat;
+	width:46px;
+	height: 46px;
+	display: inline-block;
+}
+.icon_core{
+	background: url('../img/global_img.png') -98px -22px no-repeat;
+	width: 46px;
+	height: 46px;
+	display: inline-block;
+}
+.icon_product{
+	background: url('../img/global_img.png') -179px -22px no-repeat;
+	width: 46px;
+	height: 46px;
+	display: inline-block;
+}
+.icon_service{
+	background: url('../img/global_img.png') -260px -22px no-repeat;
+	width: 46px;
+	height: 46px;
+	display: inline-block;
+}
+.introduction span{
+	width: 100%;
+	display: inline-block;
+}
+
+/* section_2_product */
+.product_title  h2{
+	margin-bottom: 0px;
+}
+.product_title span{
+	display: inline-block;
+	width: 40px;
+	height: 4px;
+	background-color: #303030;
+}
+.product_content .row > div > a:hover{
+	color:#ff9900;
+}
+.picture_location{
+	width:100%;
+	overflow: hidden;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.picture_location img{
+	width: 100%;
+}
+
+/* section_3_aboutus */
+
+
+
+/* section_4_exhibiton */
+
+
+
+/* 响应式调整 */
+@media (max-width: 767px) {
+	.ip-none{
+		display: none;
+	}
+	#banner .banner-item:nth-child(1) .banner-img{
+	background-image: url('../img/ip_banner_1.jpg');
+	}
+	#banner .banner-item:nth-child(2) .banner-img{
+	background-image: url('../img/ip_banner_2.jpg');
+	}
+}
+
+
+

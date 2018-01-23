@@ -1,0 +1,74 @@
+/* CSS Document */
+.color_white{
+	color: #fff;
+}
+.color_main{
+
+}
+.color_sub{
+	color: #ff9900;
+}
+.color_sub_font{
+	color: #303030;
+}
+.bg_white{
+	background-color: #fff;
+}
+.fz_1x_1{
+	font-size: 1.1em;
+}
+.fz_1x_2{
+	font-size:1.2em;
+}
+.fz_1x_6{
+	font-size: 1.6em;
+}
+.fw_bold{
+	font-weight: bold;
+}
+
+.text_center{
+	text-align: center;
+}
+.pa_t15{
+	padding:15px 15px 15px 0;
+}
+.pa_s15{
+	padding: 15px 0 15px 15px;
+}
+.pa_ts15{
+	padding: 15px;
+}
+.pa_top20{
+	padding-top: 20px;
+}
+.pa_top60{
+	padding-top: 60px;
+}
+.mar_le20{
+	margin-left: 20px;
+}
+.mar_tp20{
+	margin-top: 20px;
+}
+.mar_bo20{
+	margin-bottom: 20px;
+}
+.mar_bo40{
+	margin-bottom: 40px;
+}
+.mar_lr10{
+	margin:0  10px;
+}
+.mar_lr20{
+	margin:0 20px;
+}
+.mar_tb20{
+	margin: 20px 0;
+}
+.mar_tb30{
+	margin: 30px 0;
+}
+.mar_ts{
+	margin: 30px 0 0;
+}

@@ -185,11 +185,18 @@ ul.nav li:hover sup{
 	width: 100%;
 }
 
-/* section_3_aboutus */
+/* footer */
+.footer_section{
+	background-color: #0065ce;
+}
+.footer_logo{
+	background: url('../img/foot_logo.png');
+	width: 116px;
+	height: 106px;
+	display: inline-block;
+}
 
 
-
-/* section_4_exhibiton */
 
 
 

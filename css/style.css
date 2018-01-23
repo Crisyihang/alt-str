@@ -45,6 +45,12 @@
 .pa_top60{
 	padding-top: 60px;
 }
+.pa_bot40{
+	padding-bottom: 40px;
+}
+.pa_tb40{
+	padding:40px 0;
+}
 .mar_le20{
 	margin-left: 20px;
 }

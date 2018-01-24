@@ -53,7 +53,7 @@ ul.nav li:hover sup{
 }
 
 
-/** index **/
+/** ** index ** **/
 
 /* header */
 .header{
@@ -184,21 +184,100 @@ ul.nav li:hover sup{
 .picture_location img{
 	width: 100%;
 }
-
-/* footer */
-.footer_section{
-	background-color: #0065ce;
+.product_title h2 a:hover{
+	color: #ff9900;
 }
+
+/* about us*/
+.pt_show{
+	width: 100%;
+	overflow: hidden;
+}
+.pt_show img{
+	width: 100%;
+}
+.profile{
+	padding:30px 30px 0 30px;
+}
+/* footer */
 .footer_logo{
 	background: url('../img/foot_logo.png');
 	width: 116px;
 	height: 106px;
 	display: inline-block;
+	float: left;
+}
+.footer_main{
+	float: left;
+	width: 80%;
+	margin-left: 4%;
+	height: 106px;
+	line-height: 106px;
+}
+.footer_main div{
+	float: left;
+	width: 25%;
+}
+.footer_main div p{
+	margin: 0;
 }
 
+/** ** product ** **/
+.product_main{
+	padding: 0px;
+}
+.product_main h2{
+	margin: 0px;
+}
+.product_main ul{
+	padding: 30px 0;
+	border: 1px solid #0065cf;
+	float: left;
+	width: 100%;
+}
+.product_main ul li{
+	width: 100%;
+	float: left;
+	padding: 0 30px 10px;
+	border-bottom: 1px solid #dcdcdc;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.product_main ul li:last-child{
+	margin-bottom: 0px;
+}
+.product_content{
+	float: left;
+	width: 96%;
+	margin-left: 4%;
+}
+.product_content ul{
+	float: left;
+	width: 100%;
+	padding: 18px 1% 2px 2%;
+}
+.product_content ul li{
+	float: left;
+	width: 24%;
+	padding:1%;
+	box-shadow: 0 0 8px rgba(0,0,0,.1);
+	margin-left: 1%;
+	margin-bottom: 16px;
+}
+.product_content ul li:nth-child(4n+1){
+	margin-left: 0;
+}
+.product_content ul li h3{
+	margin:10px 0;
+}
+.product_content .div_img{
+	width: 100%;
+	overflow:hidden;
 
-
-
+}
+.product_content .div_img img{
+	width: 100%;
+}
 
 /* 响应式调整 */
 @media (max-width: 767px) {
@@ -206,10 +285,13 @@ ul.nav li:hover sup{
 		display: none;
 	}
 	#banner .banner-item:nth-child(1) .banner-img{
-	background-image: url('../img/ip_banner_1.jpg');
+		background-image: url('../img/ip_banner_1.jpg');
 	}
 	#banner .banner-item:nth-child(2) .banner-img{
-	background-image: url('../img/ip_banner_2.jpg');
+		background-image: url('../img/ip_banner_2.jpg');
+	}
+	.footer_main{
+		width: 100%;
 	}
 }
 

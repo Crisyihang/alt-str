@@ -1,9 +1,15 @@
 /* CSS Document */
+.fl_left{
+	float: left;
+}
+.fl_right{
+	float: right;
+}
 .color_white{
 	color: #fff;
 }
 .color_main{
-
+	color: #0065cf;
 }
 .color_sub{
 	color: #ff9900;
@@ -14,19 +20,36 @@
 .bg_white{
 	background-color: #fff;
 }
+.bg_sub_black{
+	background-color: #303030;
+}
+.bg_main{
+	background-color: #0065cf;
+}
+.fz_x_9{
+	font-size:0.9em;
+}
+.fz_1x{
+	font-size: 1em;
+}
 .fz_1x_1{
 	font-size: 1.1em;
 }
 .fz_1x_2{
 	font-size:1.2em;
 }
+.fz_1x_4{
+	font-size:1.4em;
+}
 .fz_1x_6{
 	font-size: 1.6em;
+}
+.fz_1x_8{
+	font-size:1.8em;
 }
 .fw_bold{
 	font-weight: bold;
 }
-
 .text_center{
 	text-align: center;
 }
@@ -48,11 +71,23 @@
 .pa_bot40{
 	padding-bottom: 40px;
 }
+.pa_bot80{
+	padding-bottom: 80px;
+}
+.pa_tb20{
+	padding: 20px 0;
+}
 .pa_tb40{
 	padding:40px 0;
 }
+.pa_le06{
+	padding-left: 6px;
+}
 .mar_le20{
 	margin-left: 20px;
+}
+.mar_tp10{
+	margin-top: 10px;
 }
 .mar_tp20{
 	margin-top: 20px;

@@ -113,3 +113,21 @@
 .mar_ts{
 	margin: 30px 0 0;
 }
+
+
+.animate_img_x img{
+    transform: translateX(0px);
+-ms-transform:translateX(0px);
+-moz-transform:translateX(0px);
+-webkit-transform:translateX(0px);
+-o-transform:translateX(0px);
+    transition: transform 0.4s ease 0s, -webkit-transform 0.4s ease 0s,-o-transform 0.4s ease 0s,-moz-transform 0.4s ease 0s;
+}
+.animate_img_x:hover img{
+    transform: translateX(5px);
+	transform: translateX(5px);
+-ms-transform:translateX(5px);
+-moz-transform:translateX(5px);
+-webkit-transform:translateX(5px);
+-o-transform:translateX(5px);
+}

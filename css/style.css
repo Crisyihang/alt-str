@@ -5,11 +5,17 @@
 .fl_right{
 	float: right;
 }
+.text_right{
+	text-align: right;
+}
 .color_white{
 	color: #fff;
 }
 .color_main{
 	color: #0065cf;
+}
+.color_red{
+	color: red;
 }
 .color_sub{
 	color: #ff9900;

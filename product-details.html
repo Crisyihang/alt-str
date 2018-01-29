@@ -8,6 +8,7 @@
 	<title>Product-details</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrapValidator.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-fileinput.css">
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -101,16 +102,16 @@
 			        </ul>
 			        <!-- Tab panes -->
 			        <div class="tab-content">
-			            <div role="tabpanel" class="tab-pane active lh1_6 color_sub_font fz_1x_1 home">
+			            <div role="tabpanel" class="tab-pane active lh1_6 color_sub_font fz_1x_2 home">
 			                12V / 1.2KW / 8T / CW<br>Mitsubishi PMGR Starter
 			            </div>
-			            <div role="tabpanel" class="tab-pane lh1_6 color_sub_font fz_1x_1 profile">
+			            <div role="tabpanel" class="tab-pane lh1_6 color_sub_font fz_1x_2 profile">
 			                Hyster: 2314322 / 3114995<br>Mitsubishi: M0T84381 / M0T84381A
 			            </div>
-			            <div role="tabpanel" class="tab-pane lh1_6 color_sub_font fz_1x_1 messages">
+			            <div role="tabpanel" class="tab-pane lh1_6 color_sub_font fz_1x_2 messages">
 			                Lester: 18096
 			            </div>
-			            <div role="tabpanel" class="tab-pane lh1_6 color_sub_font fz_1x_1 settings">
+			            <div role="tabpanel" class="tab-pane lh1_6 color_sub_font fz_1x_2 settings">
 			                Hyster Lift Truck:<br>H-25XL Mazda FE Engine 1998-2006<br>H-25XM Mazda FE Engine 1998-2006<br>H-35XL Mazda FE Engine 1998-2006<br>H-35XM Mazda FE Engine 1998-2006<br>H-40XL Mazda FE Engine 1998-2006<br>H-50XL Mazda FE Engine 1998-2006<br>H-60XL Mazda FE Engine 1998-2006<br><br>Nissan Lift Truck:<br>Various Models P40 Engine 1986-2006<br><br>Yale Lift Truck:<br>Various Models F2 Engine 1998-2006<br>Various Models FE Engine 1998-2006<br>Various Models VA Engine 1998-2006
 			            </div>
 			    	</div>
@@ -440,6 +441,32 @@
 								</select>
 							</div>
 						</div>
+						<!--<div class="form-group" id="uploadForm" enctype='multipart/form-data'>
+							<label class="col-lg-3 control-label">Upload photos:</label>
+			                <div class="fileinput fileinput-new col-lg-6" data-provides="fileinput"  id="exampleInputUpload">
+			                    <div class="fileinput-new thumbnail" style="width: 20%;height: auto;max-height:150px;">
+			                        <img id='picImg' style="width: 100%;height: auto;max-height: 140px;" src="img/noimage.png" alt="" />
+			                    </div>
+			                    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+			                    <div>
+			                        <span class="btn btn-primary btn-file">
+			                            <span class="fileinput-new">Select Photos</span>
+			                            <span class="fileinput-exists">Change</span>
+			                            <input multiple type="file"  data-show-caption="true" name="pic1" id="picID"  accept="image/gif,image/jpeg,image/x-png">
+			                        </span>
+			                        <a href="javascript:;" class="btn btn-warning fileinput-exists" data-dismiss="fileinput">Remove</a>
+			                    </div>
+			                </div>
+			            	<div class="col-lg-6">
+               					 <input id="input-id" name="file" multiple type="file" data-show-caption="true">
+            				</div>
+			            </div>-->
+						<div class="row form-group">
+					            <label class="col-lg-3 control-label">Upload photos:</label>
+					            <div class="col-lg-6" style="text-align: left;">
+					                <input id="input-b5" name="input-b5[]" multiple type="file"  class="file-loading">
+					            </div>
+						</div>
 						<div class="form-group">
 							<div class="col-lg-12">
 								<button id="validateBtn" class="color_btn bd_button " type="button">Send</button>
@@ -457,6 +484,8 @@
 	<script type="text/javascript" src="js/global.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/bootstrapValidator.js"></script>
+	<script type="text/javascript" src="js/bootstrap-fileinput.js"></script>
+	<!--<script type="text/javascript" src="js/fileinput.js"></script>-->
 	<script type="text/javascript" src="js/touchSlider.js"></script>
 	<script type="text/javascript" src="js/banner.js"></script>
 	<script type="text/javascript">$("#banner").THBanner();</script>
@@ -482,6 +511,79 @@
 					 $(".tab-pane").hide();
 					 $("."+$(this).data("val")).show();
 				 });
+
+
+				 $(function () {
+					 initFileInput("input-b5");
+				 })
+
+				   	function initFileInput(ctrlName) {
+				        var control = $('#' + ctrlName);
+				        control.fileinput({
+				            //language: 'zh', //设置语言
+				            uploadUrl: "XXX/XXX", //上传的地址
+				            allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+				            //uploadExtraData:{"id": 1, "fileName":'123.mp3'},
+				            uploadAsync: true, //默认异步上传
+				            showUpload: false, //是否显示上传按钮
+				            showRemove : false, //显示移除按钮
+				            showPreview : true, //是否显示预览
+				            showCaption: false,//是否显示标题
+				            //browseClass: "btn btn-primary", //按钮样式
+				            //dropZoneEnabled: true,//是否显示拖拽区域
+				            //minImageWidth: 40, //图片的最小宽度
+				            minImageHeight: 20,//图片的最小高度
+				            //maxImageWidth: 1000,//图片的最大宽度
+				            //maxImageHeight: 1000,//图片的最大高度
+				            maxFileSize: 10240,//单位为kb，如果为0表示不限制文件大小
+				            //minFileCount: 0,
+				            maxFileCount: 3, //表示允许同时上传的最大文件个数
+				            enctype: 'multipart/form-data',
+				            validateInitialCount:true,
+				            //previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+				            //msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+							msgFilesTooMany:"Select the number of uploaded files ({n}) to exceed the maximum number of allowed values, ({m})!",
+
+
+				        }).on('filepreupload', function(event, data, previewId, index) {     //上传中
+				            var form = data.form, files = data.files, extra = data.extra,
+				            response = data.response, reader = data.reader;
+				            console.log('文件正在上传');
+				        }).on("fileuploaded", function (event, data, previewId, index) {    //一个文件上传成功
+				            console.log('文件上传成功！'+data.id);
+
+				        }).on('fileerror', function(event, data, msg) {  //一个文件上传失败
+				            console.log('文件上传失败！'+data.id);
+
+
+				        })
+					}
+
+				 //$(function () {
+			        //$('#validateBtn').click(function () {
+			            //var data = new FormData($('#uploadForm')[0]);
+			            //$.ajax({
+			                //url: 'xxx/xxx',
+			                //type: 'POST',
+			                //data: data,
+			                //async: false,
+			                //cache: false,
+			                //contentType: false,
+			                //processData: false,
+			                //success: function (data) {
+			                    //console.log(data);
+			                    //if(data.status){
+			                        //console.log('upload success');
+			                    //}else{
+			                        //console.log(data.message);
+			                    //}
+			                //},
+			                //error: function (data) {
+			                    //console.log(data.status);
+			                //}
+			            //});
+			        //});
+			    //})
 			    // Generate a simple captcha
 			    function randomNumber(min, max) {
 			        return Math.floor(Math.random() * (max - min + 1) + min);
@@ -555,52 +657,6 @@
 			                    different: {
 			                        field: 'username',
 			                        message: 'The password cannot be the same as username'
-			                    }
-			                }
-			            },
-			            confirmPassword: {
-			                validators: {
-			                    notEmpty: {
-			                        message: 'The confirm password is required and cannot be empty'
-			                    },
-			                    identical: {
-			                        field: 'password',
-			                        message: 'The password and its confirm are not the same'
-			                    },
-			                    different: {
-			                        field: 'username',
-			                        message: 'The password cannot be the same as username'
-			                    }
-			                }
-			            },
-			            birthday: {
-			                validators: {
-			                    date: {
-			                        format: 'YYYY/MM/DD',
-			                        message: 'The birthday is not valid'
-			                    }
-			                }
-			            },
-			            gender: {
-			                validators: {
-			                    notEmpty: {
-			                        message: 'The gender is required'
-			                    }
-			                }
-			            },
-			            'languages[]': {
-			                validators: {
-			                    notEmpty: {
-			                        message: 'Please specify at least one language you can speak'
-			                    }
-			                }
-			            },
-			            'programs[]': {
-			                validators: {
-			                    choice: {
-			                        min: 2,
-			                        max: 4,
-			                        message: 'Please choose 2 - 4 programming languages you are good at'
 			                    }
 			                }
 			            }

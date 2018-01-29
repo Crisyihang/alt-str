@@ -5,9 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Product</title>
+	<title>Product | Alt-Str</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrapValidator.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-fileinput.css">
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -24,7 +25,7 @@
 					<div class="form_input">
 						<form>
 							<input class="search" type="text" name="keyword" placeholder="Please Input Keyword" />
-							<button class="btn fa fa-search color_white fa-2x"></button>
+							<button class="zj_btn fa fa-search color_white fa-2x"></button>
 						</form>
 					</div>
 					<div class="pl_ri">
@@ -62,7 +63,7 @@
 	<!-- 面包屑 -->
 	<div class="container">
 		<div class="row">
-			<div class="pa_tb20 ">
+			<div class="pa_tb20">
 				<a href="#" class="fz_x_9">Home</a>
 				&nbsp
 				<span> > </span>
@@ -74,6 +75,20 @@
 	<!-- 面包屑 end-->
 
 	<!-- 主体 -->
+	<div class="container pa_bot20">
+		<div class="row">
+			<div class="col-xs-6 choose_list">
+				<a href="#">
+					<img src="img/group_oem.gif">
+				</a>
+			</div>
+			<div class="col-xs-6 choose_list">
+				<a href="#">
+					<img src="img/group_vehicle.png">
+				</a>
+			</div>
+		</div>
+	</div>
 	<div class="container pa_bot40">
 		<div class="row">
 			<div class="col-md-3 product_main">
@@ -1802,7 +1817,7 @@
 										<span>AT11627</span>
 									</div>
 								</a>
-								<a class="color_btn fl_right">Enquiry</a>
+								<a class="color_btn fl_right ">Enquiry</a>
 							</li>
 							<li class="col-sm-3 col-xs-6 ">
 								<a href="#">
@@ -1967,7 +1982,7 @@
 	</footer>
 	<div class="overing"></div>
 	<div class="pannel">
-		<div class="cont" style="width:100%; height: 520px;overflow:scroll;overflow-x: hidden;">
+		<div class="cont">
 			<div class="col-lg-12">
 					<div class="close">
 						<i class="fa fa-close fa-lg"></i>
@@ -2000,11 +2015,10 @@
 								<input type="text" class="form-control" name="username" />
 							</div>
 						</div>
-						
 						<div class="form-group">
 							<label class="col-lg-3 control-label">Country/Region:</label>
 							<div class="col-lg-6">
-								<select class="formtext" name="country">
+								<select class="formtext" name="country" id="country">
 									<option value="" selected="">-- please select one --</option>
 									<option value="china">china</option>
 									<option value="australia">australia</option>
@@ -2249,6 +2263,32 @@
 								</select>
 							</div>
 						</div>
+						<!--<div class="form-group" id="uploadForm" enctype='multipart/form-data'>
+							<label class="col-lg-3 control-label">Upload photos:</label>
+			                <div class="fileinput fileinput-new col-lg-6" data-provides="fileinput"  id="exampleInputUpload">
+			                    <div class="fileinput-new thumbnail" style="width: 20%;height: auto;max-height:150px;">
+			                        <img id='picImg' style="width: 100%;height: auto;max-height: 140px;" src="img/noimage.png" alt="" />
+			                    </div>
+			                    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+			                    <div>
+			                        <span class="btn btn-primary btn-file">
+			                            <span class="fileinput-new">Select Photos</span>
+			                            <span class="fileinput-exists">Change</span>
+			                            <input multiple type="file"  data-show-caption="true" name="pic1" id="picID"  accept="image/gif,image/jpeg,image/x-png">
+			                        </span>
+			                        <a href="javascript:;" class="btn btn-warning fileinput-exists" data-dismiss="fileinput">Remove</a>
+			                    </div>
+			                </div>
+			            	<div class="col-lg-6">
+               					 <input id="input-id" name="file" multiple type="file" data-show-caption="true">
+            				</div>
+			            </div>-->
+						<div class="row form-group">
+					            <label class="col-lg-3 control-label">Upload photos:</label>
+					            <div class="col-lg-6" style="text-align: left;">
+					                <input id="input-b5" name="input-b5[]" multiple type="file"  class="file-loading">
+					            </div>
+						</div>
 						<div class="form-group">
 							<div class="col-lg-12">
 								<button id="validateBtn" class="color_btn bd_button " type="button">Send</button>
@@ -2256,8 +2296,8 @@
 							</div>
 						</div>
 					</form>
-				</div>
 			</div>
+		</div>
 	</div>
 	<!-- footer end -->
 
@@ -2266,11 +2306,57 @@
 	<script type="text/javascript" src="js/global.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/bootstrapValidator.js"></script>
+	<script type="text/javascript" src="js/bootstrap-fileinput.js"></script>
 	<script type="text/javascript" src="js/touchSlider.js"></script>
 	<script type="text/javascript" src="js/banner.js"></script>
 	<script type="text/javascript">$("#banner").THBanner();</script>
 	<script type="text/javascript">
 $(document).ready(function() {
+				$(function () {
+					 initFileInput("input-b5");
+				 })
+
+				   	function initFileInput(ctrlName) {
+				        var control = $('#' + ctrlName);
+				        control.fileinput({
+				            //language: 'zh', //设置语言
+				            uploadUrl: "XXX/XXX", //上传的地址
+				            allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+				            //uploadExtraData:{"id": 1, "fileName":'123.mp3'},
+				            uploadAsync: true, //默认异步上传
+				            showUpload: false, //是否显示上传按钮
+				            showRemove : false, //显示移除按钮
+				            showPreview : true, //是否显示预览
+				            showCaption: false,//是否显示标题
+				            //browseClass: "btn btn-primary", //按钮样式
+				            //dropZoneEnabled: true,//是否显示拖拽区域
+				            //minImageWidth: 40, //图片的最小宽度
+				            minImageHeight: 20,//图片的最小高度
+				            //maxImageWidth: 1000,//图片的最大宽度
+				            //maxImageHeight: 1000,//图片的最大高度
+				            maxFileSize: 2048,//单位为kb，如果为0表示不限制文件大小
+				            //minFileCount: 0,
+				            maxFileCount: 3, //表示允许同时上传的最大文件个数
+				            enctype: 'multipart/form-data',
+				            validateInitialCount:true,
+				            //previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+				            //msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+							msgFilesTooMany:"Select the number of uploaded files ({n}) to exceed the maximum number of allowed values, ({m})!",
+
+
+				        }).on('filepreupload', function(event, data, previewId, index) {     //上传中
+				            var form = data.form, files = data.files, extra = data.extra,
+				            response = data.response, reader = data.reader;
+				            console.log('文件正在上传');
+				        }).on("fileuploaded", function (event, data, previewId, index) {    //一个文件上传成功
+				            console.log('文件上传成功！'+data.id);
+
+				        }).on('fileerror', function(event, data, msg) {  //一个文件上传失败
+				            console.log('文件上传失败！'+data.id);
+
+
+				        })
+					}
 			    // Generate a simple captcha
 			    function randomNumber(min, max) {
 			        return Math.floor(Math.random() * (max - min + 1) + min);
@@ -2278,7 +2364,7 @@ $(document).ready(function() {
 			    $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
 
 			    $('#defaultForm').bootstrapValidator({
-			//        live: 'disabled',
+					//live: 'disabled',
 			        message: 'This value is not valid',
 			        feedbackIcons: {
 			            valid: 'fa fa-check',

@@ -5,6 +5,7 @@ $(document).ready(function() {
 	$(".pannel .close").on('click touchend',function(){
 		$('.pannel').hide();
 		$('.overing').hide();
+		$(document.body).css({ "overflow-y": "auto" });
 	})
 
 	$('.product_content .color_btn,.pdt_btn .color_btn').on('click touchend',function(e){

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/video.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <body>
@@ -23,7 +24,7 @@
 					<div class="form_input">
 						<form>
 							<input class="search" type="text" name="keyword" placeholder="Please Input Keyword" />
-							<button class="btn fa fa-search color_white fa-2x"></button>
+							<button class="zj_btn fa fa-search color_white fa-2x"></button>
 						</form>
 					</div>
 					<div class="pl_ri">
@@ -111,6 +112,34 @@
 			</div>
 		</div>
 		<div class="container home_product bg_white">
+			<section id="section_products" class="appear carousel carousel-fade slide" data-ride="carousel" data-interval="4000"  data-pause="hover">
+						<!-- 轮播（Carousel）项目 -->
+						<div class="carousel-inner">
+							<div class="item firstcar active" style="background:url('img/products_img_1.jpg'); ">
+					            <div class="container">
+			                     	<div class="row car-four">
+			                            <div class="col-md-12 col-xs-12 color-white text_center animated fadeInDown animation206">
+			                                <p class="carouselText4">简&nbsp;&nbsp;&nbsp;&nbsp;洁</p>
+			                                <p class="carouselText1">大&nbsp;道&nbsp;至&nbsp;简</p>
+			                            </div>
+
+			                        </div>
+				            	</div>
+				        	</div>
+				        	<div class="item firstcar" style="background-color: #eeeeee;">
+					            <div class="container">
+					                <div class="row">
+					                	<div style="position: absolute;top:0;left: 0;">
+						                    <div class=" animated fadeInUp car-image2">
+						                        <img src="#" class="img-responsive">
+						                    </div>
+					                	</div>
+					                </div>
+					            </div>
+				        	</div>
+						</div>
+						<!-- 轮播（Carousel）指标 -->
+			</section>
 			<div class="row mar_ts">
 				<div class="">
 					<div class="col-md-3 col-xs-6 text_center mar_bo20 ">
@@ -136,30 +165,6 @@
 							<a href="#"><img src="img/product-1.png"></a>
 						</div>
 						<a href="#" class="fz_1x_4 fw_bold color_sub_font">STR Part</a>
-					</div>
-					<div class="col-md-3 col-xs-6 text_center mar_bo20">
-						<div class="picture_location mar_bo20" >
-							<a href="#"><img src="img/product-1.png"></a>
-						</div>
-						<a href="#" class="fz_1x_4 fw_bold color_sub_font">Alternator</a>
-					</div>
-					<div class="col-md-3 col-xs-6 text_center mar_bo20">
-						<div class="picture_location mar_bo20" >
-							<a href="#"><img src="img/product-1.png"></a>
-						</div>
-						<a href="#" class="fz_1x_6 fw_bold color_sub_font">Startor</a>
-					</div>
-					<div class="col-md-3 col-xs-6 text_center mar_bo20">
-						<div class="picture_location mar_bo20 mar_bo20" >
-							<a href="#"><img src="img/product-1.png"></a>
-						</div>
-						<a href="#" class="fz_1x_6 fw_bold color_sub_font">ALT Part</a>
-					</div>
-					<div class="col-md-3 col-xs-6 text_center mar_bo20">
-						<div class="picture_location mar_bo20" >
-							<a href="#"><img src="img/product-1.png"></a>
-						</div>
-						<a href="#" class="fz_1x_6 fw_bold color_sub_font">STR Part</a>
 					</div>
 				</div>
 			</div>
@@ -243,6 +248,23 @@
 		</div>
 		<!-- 展会展示 end -->
 
+		<!-- Video -->
+		<div class="container">
+			<div class="row">
+				<div class="pa_tb60">
+					<video id="my-video" class="video-js" controls preload="auto" width="740" height="400"
+			  	poster="m.png" data-setup="{}">
+						<source src="http://jq22com.qiniudn.com/jq22-sp.mp4" type="video/mp4">
+						<p class="vjs-no-js">
+						  To view this video please enable JavaScript, and consider upgrading to a web browser that
+						  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+						</p>
+				  </video>
+				</div>
+			</div>
+		</div>
+		<!-- Video end -->
+
 		<!-- footer -->
 		<footer class="footer_section">
 			<div class="bg_main pa_tb40">
@@ -282,7 +304,11 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/touchSlider.js"></script>
+	<script type="text/javascript" src="js/video.min.js"></script>
 	<script type="text/javascript" src="js/banner.js"></script>
 	<script type="text/javascript">$("#banner").THBanner();</script>
+	<script>
+    	videojs.options.flash.swf = "video-js.swf";
+	</script>
 </body>
 </html>

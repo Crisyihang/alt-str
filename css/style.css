@@ -1,4 +1,10 @@
 /* CSS Document */
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+	color: #fff;
+}
+.tran_5{
+	transition: all 0.5s ease 0s;
+}
 .fl_left{
 	float: left;
 }
@@ -22,6 +28,9 @@
 }
 .color_sub_font{
 	color: #303030;
+}
+.bg_personal{
+	background-color: #264ea7;
 }
 .bg_white{
 	background-color: #fff;
@@ -104,6 +113,9 @@
 .mar_bo40{
 	margin-bottom: 40px;
 }
+.mar_bo60{
+	margin-bottom: 60px;
+}
 .mar_lr10{
 	margin:0  10px;
 }
@@ -118,6 +130,9 @@
 }
 .mar_ts{
 	margin: 30px 0 0;
+}
+.lh1_6{
+	line-height: 1.6em;
 }
 
 

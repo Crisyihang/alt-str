@@ -7,10 +7,11 @@ $(document).ready(function() {
 		$('.overing').hide();
 	})
 
-	$('.product_content .color_btn').on('click touchend',function(e){
+	$('.product_content .color_btn,.pdt_btn .color_btn').on('click touchend',function(e){
 		e.preventDefault();
 		$('.overing').show();
 		$('.pannel').show();
+		$(document.body).css({ "overflow-y": "hidden" });
 	})
 
 });

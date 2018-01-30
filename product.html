@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Product | Alt-Str</title>
@@ -10,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrapValidator.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-fileinput.css">
 	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/iphone.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
@@ -18,9 +18,26 @@
 	<!-- header -->
 	<div class="header navbar">
 		<div class="container">
-				<div class="navbar-header ">
+				<div class="navbar-header navbar-default nav_top">
 					<a class="pc_logo navbar-brand" href="#"></a>
+					<button type="button" class="navbar-toggle collapsed">
+	                    <span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar icon-bar1"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar icon-bar2"></span>
+               		 </button>
+               		 <i id="app_search" class="fa fa-search app_search"></i>
 				</div>
+				<div class="app_list collapse navbar-right" style="height: auto;display: none;">
+                <!-- Main navigation -->
+				        <ul class="nav navbar-nav">
+							<li class="click"><a>Home</a></li>
+							<li><a href="#">Product</a></li>
+							<li><a href="#">Download</a></li>
+							<li><a href="#">More</a></li>
+							<li><a href="#">About Us</a></li>
+				        </ul>
+            	</div>
 				<div class="navbar-collapse">
 					<div class="form_input">
 						<form>
@@ -28,14 +45,17 @@
 							<button class="zj_btn fa fa-search color_white fa-2x"></button>
 						</form>
 					</div>
-					<div class="pl_ri">
-						<a href="#" class="pl_ri_fi">Login</a>
-						<a href="#" class="mar_le20 pl_ri_sc">Download</a>
+					<div class="pl_ri ip_none">
+
+						<a href="#" class="pl_ri_fi">
+							<i class="fa fa-user-circle-o fa-lg mar_ri12"></i>Login
+						</a>
 					</div>
 				</div>
+
 		</div>
 	</div>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default pcnone_nav">
 		<div class="container">
 			<div class="row">
 				<ul class="nav navbar-nav">
@@ -49,10 +69,10 @@
 						<a href="#">Download</a>
 					</li>
 					<li>
-						<a href="#">About Us</a>
+						<a href="#">More</a>
 					</li>
 					<li>
-						<a href="#">Contact Us</a>
+						<a href="#">About Us</a>
 					</li>
 				</ul>
 			</div>
@@ -61,9 +81,9 @@
 	<!-- header end -->
 
 	<!-- 面包屑 -->
-	<div class="container">
+	<div class="container ip_mb">
 		<div class="row">
-			<div class="pa_tb20">
+			<div class="pa_tb20 ip_jj">
 				<a href="#" class="fz_x_9">Home</a>
 				&nbsp
 				<span> > </span>
@@ -75,7 +95,7 @@
 	<!-- 面包屑 end-->
 
 	<!-- 主体 -->
-	<div class="container pa_bot20">
+	<div class="container pa_bot20 ip_jj">
 		<div class="row">
 			<div class="col-xs-6 choose_list">
 				<a href="#">
@@ -91,11 +111,11 @@
 	</div>
 	<div class="container pa_bot40">
 		<div class="row">
-			<div class="col-md-3 product_main">
+			<div id="product_main" class="col-md-3 product_main ip_jj">
 				<div class="menu_list">
 					<h2 class="text_center bg_main pa_tb20 color_white fz_1x_2 fw_bold">Products Catalog</h2>
 				</div>
-				<ul class="top_list">
+				<ul id="top_list" class="top_list">
 					<li class="prodctlist_menu">
 						<div class="fl_left fw_bold">
 							<i></i>
@@ -104,7 +124,7 @@
 						<div class="fl_right">
 							<i class="fa fa-angle-right fa-lg" style="color: #757575;"></i>
 						</div>
-						<div class="menu_dropdown bg_white">
+						<div id="menu_dropdown" class="menu_dropdown bg_white">
 							<ul>
 								<li class="animate_img_x">
 									<a href="#" class="color_sub_font">
@@ -501,7 +521,7 @@
 						<div class="fl_right">
 							<i class="fa fa-angle-right fa-lg" style="color: #757575;"></i>
 						</div>
-						<div class="menu_dropdown bg_white">
+						<div id="menu_dropdown" class="menu_dropdown bg_white ">
 							<ul>
 								<li class="animate_img_x">
 									<a href="#" class="color_sub_font">
@@ -898,7 +918,7 @@
 						<div class="fl_right">
 							<i class="fa fa-angle-right fa-lg" style="color: #757575;"></i>
 						</div>
-						<div class="menu_dropdown bg_white">
+						<div  id="menu_dropdown" class="menu_dropdown bg_white	 ">
 							<ul>
 								<li class="animate_img_x">
 									<a href="#" class="color_sub_font">
@@ -1295,7 +1315,7 @@
 						<div class="fl_right">
 							<i class="fa fa-angle-right fa-lg" style="color: #757575;"></i>
 						</div>
-						<div class="menu_dropdown bg_white">
+						<div  id="menu_dropdown" class="menu_dropdown bg_white ">
 							<ul>
 								<li class="animate_img_x">
 									<a href="#" class="color_sub_font">
@@ -1694,7 +1714,7 @@
 								<a href="#">
 									<h3 class="text_center fz_1x fw_bold color_sub_font">Denso</h3>
 									<div class="div_img">
-										<img src="#" />
+										<img src="http://www.alt-str.com/home/image?id=" />
 									</div>
 									<div class="fl_left fz_x_9 ali_section color_sub_font">
 										<span>Alternator</span>
@@ -1949,37 +1969,41 @@
 
 	<!-- footer -->
 	<footer class="footer_section">
-		<div class="bg_main pa_tb40">
-			<div class="container">
-				<div class="row">
-					<div class="app_tz">
-						<div class="footer_logo"></div>
-					</div>
-					<div class="footer_main">
-						<div class=" text_center">
-							<i class="fa  fa-map-marker fa-2x-6  color_white "></i>
-							<span class="color_white pa_le06" style="display: inline-block;">No.596, Yangshu Rd</span>
-						</div>
-						<div class="text_center">
-							<i class="fa fa-at fa-2x-6  color_white"></i>
-							<span class="color_white pa_le06">info@alt-str.com</span>
-						</div>
-						<div class=" text_center">
-							<i class="fa fa-phone fa-2x-6  color_white"></i>
-							<span class="color_white pa_le06">+86-512-50352985</span>
-						</div>
-						<div class=" text_center">
-							<i class="fa fa-fax fa-2x-6  color_white"></i>
-							<span class="color_white pa_le06">+86-21-23010211</span>
+			<div class="bg_main pa_tb40">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="app_tz">
+								<div class="footer_logo"></div>
+							</div>
+							<div class="footer_main">
+								<div class=" text_center">
+									<i class="fa  fa-map-marker fa-2x-6  color_white "></i>
+									<span class="color_white pa_le06" style="display: inline-block;">No.596, Yangshu Rd</span>
+								</div>
+								<div class="text_center">
+									<i class="fa fa-at fa-2x-6  color_white"></i>
+									<span class="color_white pa_le06">info@alt-str.com</span>
+								</div>
+								<div class=" text_center">
+									<i class="fa fa-phone fa-2x-6  color_white"></i>
+									<span class="color_white pa_le06">+86-512-50352985</span>
+								</div>
+								<div class=" text_center">
+									<i class="fa fa-fax fa-2x-6  color_white"></i>
+									<span class="color_white pa_le06">+86-21-23010211</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="bg_sub_black text_center pa_tb20">
-			<p class="color_white">Copyright© 2006-2018 Alt-Str.com. All rights reserved.</p>
-		</div>
+			<div class="bg_sub_black text_center pa_tb20 footer_end">
+				<p class="color_white">Copyright© 2006-2018 Alt-Str.com. All rights reserved.</p>
+			</div>
 	</footer>
+	<!-- footer end -->
+	<div class="bg_div"></div>
 	<div class="overing"></div>
 	<div class="pannel">
 		<div class="cont">
@@ -2311,7 +2335,7 @@
 	<script type="text/javascript" src="js/banner.js"></script>
 	<script type="text/javascript">$("#banner").THBanner();</script>
 	<script type="text/javascript">
-$(document).ready(function() {
+	$(document).ready(function() {
 				$(function () {
 					 initFileInput("input-b5");
 				 })

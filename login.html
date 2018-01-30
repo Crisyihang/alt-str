@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Login</title>
+	<title>Login | Alt-Str</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrapValidator.css">
 	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/iphone.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
@@ -17,9 +17,26 @@
 	<!-- header -->
 	<div class="header navbar">
 		<div class="container">
-				<div class="navbar-header ">
+				<div class="navbar-header navbar-default nav_top">
 					<a class="pc_logo navbar-brand" href="#"></a>
+					<button type="button" class="navbar-toggle collapsed">
+	                    <span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar icon-bar1"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar icon-bar2"></span>
+               		 </button>
+               		 <i id="app_search" class="fa fa-search app_search"></i>
 				</div>
+				<div class="app_list collapse navbar-right" style="height: auto;display: none;">
+                <!-- Main navigation -->
+				        <ul class="nav navbar-nav">
+							<li class="click"><a>Home</a></li>
+							<li><a href="#">Product</a></li>
+							<li><a href="#">Download</a></li>
+							<li><a href="#">More</a></li>
+							<li><a href="#">About Us</a></li>
+				        </ul>
+            	</div>
 				<div class="navbar-collapse">
 					<div class="form_input">
 						<form>
@@ -27,14 +44,17 @@
 							<button class="zj_btn fa fa-search color_white fa-2x"></button>
 						</form>
 					</div>
-					<div class="pl_ri">
-						<a href="#" class="pl_ri_fi">Login</a>
-						<a href="#" class="mar_le20 pl_ri_sc">Download</a>
+					<div class="pl_ri ip_none">
+
+						<a href="#" class="pl_ri_fi">
+							<i class="fa fa-user-circle-o fa-lg mar_ri12"></i>Login
+						</a>
 					</div>
 				</div>
+
 		</div>
 	</div>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default pcnone_nav">
 		<div class="container">
 			<div class="row">
 				<ul class="nav navbar-nav">
@@ -48,10 +68,10 @@
 						<a href="#">Download</a>
 					</li>
 					<li>
-						<a href="#">About Us</a>
+						<a href="#">More</a>
 					</li>
 					<li>
-						<a href="#">Contact Us</a>
+						<a href="#">About Us</a>
 					</li>
 				</ul>
 			</div>
@@ -79,13 +99,13 @@
 
 	<div class="container ">
 		<div class="row">
-			<div class="login_total bg_white mar_tb30 pa_tb40 col-md-12">
-				<div class=" col-md-6 text_center">
+			<div class="login_total bg_white col-md-12">
+				<div class=" col-md-6 text_center ">
 					<div class="bz_img">
 						<img src="img/login_left.png" />
 					</div>
 				</div>
-				<div class="login_main col-md-6">
+				<div class="login_main col-md-6 ">
 					<form action="#" method="get" id="defaultForm"  class="form-horizontal col-lg-offset-2" >
 						<div class="form-group ">
 							<label class=" control-label login_title"> Email </label>
@@ -113,37 +133,40 @@
 
 	<!-- footer -->
 	<footer class="footer_section">
-		<div class="bg_main pa_tb40">
-			<div class="container">
-				<div class="row">
-					<div class="app_tz">
-						<div class="footer_logo"></div>
-					</div>
-					<div class="footer_main">
-						<div class=" text_center">
-							<i class="fa  fa-map-marker fa-2x-6  color_white "></i>
-							<span class="color_white pa_le06" style="display: inline-block;">No.596, Yangshu Rd</span>
-						</div>
-						<div class="text_center">
-							<i class="fa fa-at fa-2x-6  color_white"></i>
-							<span class="color_white pa_le06">info@alt-str.com</span>
-						</div>
-						<div class=" text_center">
-							<i class="fa fa-phone fa-2x-6  color_white"></i>
-							<span class="color_white pa_le06">+86-512-50352985</span>
-						</div>
-						<div class=" text_center">
-							<i class="fa fa-fax fa-2x-6  color_white"></i>
-							<span class="color_white pa_le06">+86-21-23010211</span>
+			<div class="bg_main pa_tb40">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="app_tz">
+								<div class="footer_logo"></div>
+							</div>
+							<div class="footer_main">
+								<div class=" text_center">
+									<i class="fa  fa-map-marker fa-2x-6  color_white "></i>
+									<span class="color_white pa_le06" style="display: inline-block;">No.596, Yangshu Rd</span>
+								</div>
+								<div class="text_center">
+									<i class="fa fa-at fa-2x-6  color_white"></i>
+									<span class="color_white pa_le06">info@alt-str.com</span>
+								</div>
+								<div class=" text_center">
+									<i class="fa fa-phone fa-2x-6  color_white"></i>
+									<span class="color_white pa_le06">+86-512-50352985</span>
+								</div>
+								<div class=" text_center">
+									<i class="fa fa-fax fa-2x-6  color_white"></i>
+									<span class="color_white pa_le06">+86-21-23010211</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="bg_sub_black text_center pa_tb20">
-			<p class="color_white">Copyright© 2006-2018 Alt-Str.com. All rights reserved.</p>
-		</div>
+			<div class="bg_sub_black text_center pa_tb20 footer_end">
+				<p class="color_white">Copyright© 2006-2018 Alt-Str.com. All rights reserved.</p>
+			</div>
 	</footer>
+	<!-- footer end -->
 	<div class="overing"></div>
 	<div class="pannel">
 		<div class="cont">
@@ -464,7 +487,7 @@
 			            invalid: 'fa fa-remove',
 			            validating: 'fa fa-check'
 			        },
-			        fields: {       
+			        fields: {
 			            email: {
 			                validators: {
 			                    emailAddress: {

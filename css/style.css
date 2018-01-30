@@ -107,8 +107,14 @@
 .mar_le20{
 	margin-left: 20px;
 }
+.mar_ri12{
+  margin-right: 12px;
+}
 .mar_tp10{
 	margin-top: 10px;
+}
+.mar_tpb5{
+  padding:50px 0;
 }
 .mar_tp20{
 	margin-top: 20px;

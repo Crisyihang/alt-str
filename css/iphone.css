@@ -1,0 +1,273 @@
+@charset "utf-8";
+/* CSS Document */
+/* 响应式调整 */
+@media screen and (max-width: 1189px) {
+	 .pro_details .ip_prodes{
+		margin-left: 0px;
+	}
+}
+@media screen and (max-width: 990px) {
+	.footer_main{
+		margin-left: 0px;
+		padding-top: 0px;
+		width: 100%;
+	}
+	.footer_section > div{
+		padding: 20px 0;
+	}
+	.app_tz{
+		width:100%;
+		text-align: center;
+		float: left;
+	}
+	.footer_main{
+		padding-top: 10px;
+	}
+	.footer_logo{
+		float: none;
+		background-image: url('../img/ipfoot_logo.png');
+		width: 80px;
+		height: 72px;
+	}
+	.jqzoom img{
+		width: 100%;height: 100%;
+	}
+	.jqzoom{
+		width: 50%;
+	}
+	.pro_details .ip_prodes{
+		width: 50%;
+	}
+	.nav-pdt > li{
+		font-size:1em;
+	}
+	.personal_content ul.per_content li .per_text .intro_section{
+		padding: 0px 10px;
+	}
+	.personal_content ul.per_content li .per_text .intro_section p{
+		font-size: 0.9em;
+	}
+	.personal_content ul.per_content li .per_text .sub_imgs .sub_poimgs{
+		width: 13%;
+	}
+}
+@media screen and (max-width: 767px) {
+	/* home */
+	.ip_none,.pcnone_nav{
+		display: none;
+	}
+	.app_search{
+		display: block !important;
+	}
+	#banner .banner-item:nth-child(1) .banner-img{
+		background-image: url('../img/ip_banner_1.jpg');
+	}
+	#banner .banner-item:nth-child(2) .banner-img{
+		background-image: url('../img/ip_banner_2.jpg');
+	}
+	.pc_logo{
+		margin:24px 0 24px 15px;
+	}
+	.navbar-collapse{
+		display: none;
+	}
+	.form_input{
+		margin:0px;
+		width: 100%;
+	}
+	.form_input input{
+		background-color: #fff;
+		border:1px solid #0065cf;
+	}
+	.header{
+		height: auto;
+		position: fixed;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+    	overflow-x: visible;
+	}
+	.navbar-collapse{
+		background-color: #eeeeee;
+		padding:20px 15px;
+	}
+	.video_div{
+		padding-top: 0px;
+	}
+	.footer_main div{
+		width: 50%;
+		padding-top: 10px;
+	}
+	.ip_abmain{
+		background-color: #fff;
+		padding: 20px 30px;
+	}
+	.about_fi{
+		padding: 0px;
+	}
+	.video-js{
+		width: 92%;
+	}
+	.bg_main{
+		padding: 14px 0;
+	}
+	.mar_tpb5{
+		margin-top: 5%;
+	}
+	.carousel p{
+		line-height: 18px;
+		font-size:1.2em;
+	}
+	.footer_end{
+		font-size:0.9em;
+	}
+	.introduction{
+		display: none!important;
+	}
+	.about_fi,.profile{
+		width: 100%;
+	}
+	.my-video-dimensions{
+		height: 280px;
+	}
+	.banner .banner-item{
+		top:40px!important;
+	}
+	.section_products .carousel-inner .firstcar{
+		background-image: url('../img/ip_products_1.jpg') !important ;
+		background-repeat: no-repeat;
+		height: 150px;
+	}
+	.ip_title{
+		padding-bottom: 10px;
+	}
+	.product_title{
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
+	.home_product{
+		margin: 0 15px;
+	}
+	.ip_mb{
+		padding-top: 80px;
+	}
+	.exhibion_show{
+		padding-bottom: 20px;
+	}
+	.car-image2{
+		display: block;
+	}
+	.exhibion_show	section{
+		width: 88%;
+		margin: 0 6%;
+	}
+
+	/* others */
+	.ip_jj{
+		margin: 0 15px;
+	}
+	.product_content{
+		margin-left: 0;
+		width: 100%;
+	}
+	.product_content ul.lw_proc li{
+		width: 49%;
+	}
+	.color_btn{
+		height: 36px;
+		line-height: 36px;
+	}
+	.choose_list{
+		margin-left: 6px;
+	}
+	.product_main ul.top_list > li{
+		padding: 10px 15px;
+	}
+	.product_main ul.top_list > li .menu_dropdown{
+		position: static;
+		width: 100%;
+		float: left;
+		margin-top: 10px;
+		padding: 10px 10px 6px 10px;
+	}
+	.product_main ul.top_list > li:hover{
+		background-color: transparent;
+	}
+	.product_main ul.top_list > li .menu_dropdown ul li .logo_dimg{
+		width: 48px;
+	}
+	.product_main ul.top_list li.prodctlist_menu:hover .menu_dropdown,.product_main ul.top_list li.strarter_downmenu:hover .menu_dropdown,
+	.product_main ul.top_list li.ALTPart_downmenu:hover .menu_dropdown,.product_main ul.top_list li.STRPart_downmenu:hover .menu_dropdown{
+		display: none;
+	}
+	.jqzoom{
+		width: 40%;
+	}
+	.pro_details .ip_prodes{
+		padding: 0 0 0 3%;
+		width: 60%;
+	}
+	.personal_main{
+		width: 100%;
+		padding: 0 15px;
+	}
+	.ip_personal_content{
+		width: 100%;
+	}
+	.personal_content{
+		width: 100%;
+		margin-left: 0px;
+	}
+	.ip_permain{
+		padding:14px 0;
+	}
+	.personal_content ul.per_content li .enquiry_email .fl_right{
+		float: left;
+	}
+	.personal_content ul.per_content li .per_text span{
+		font-size: 1em;
+	}
+	.download_main {
+		padding: 10px 15px;
+	}
+	.ri_download{
+		font-size: 0.9em;
+	}
+	.download_main ul li p{
+		float: left;
+		width: 60%;
+		font-size:0.9em;
+		padding:0 0 0 12px;
+	}
+	.aboutus_main{
+		padding: 50px 10%;
+	}
+	.login_total{
+		padding:40px 0;
+		margin: 110px 15px 20px;
+	}
+	.bz_img{
+		padding-top: 0px;
+	}
+}
+@media screen and (max-width: 600px){
+	.footer_main > div {
+		font-size:0.9em;
+	}
+	.footer_main{
+		padding: 0 10px;
+	}
+	.jqzoom{
+		width: 100%;
+	}
+	.pro_details .ip_prodes{
+		width: 100%;
+		padding: 20px 0 0;
+	}
+	.pdt_btn .color_btn{
+		margin: 10px 0;
+	}
+	.pro_details{
+		padding:20px 30px;
+		padding-bottom: 0px;
+		margin-bottom: 20px !important;
+	}
+}

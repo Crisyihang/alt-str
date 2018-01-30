@@ -48,11 +48,23 @@ ul li{
 ul.nav li:hover sup{
 	width:100%;
 }
+.body-static{
+	overflow:hidden !important;
+}
 .overs{
 	overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
     display:block;
+}
+.bg_div{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 50;
 }
 .overing{
 	background: #000 none repeat scroll 0 0;
@@ -147,6 +159,9 @@ ul.nav li:hover sup{
 
 
 /** ** index ** **/
+.exhibion_show{
+	padding-bottom:80px;
+}
 .mar_ts{
 	padding: 0 15px;
 }
@@ -168,6 +183,7 @@ ul.nav li:hover sup{
 	height: 90px;
 	background-color: #fff;
 	width: 100%;
+	z-index: 99;
 }
 .pc_logo{
 	background-image: url("../img/logo.png");
@@ -198,6 +214,7 @@ ul.nav li:hover sup{
     margin-top: 20px;
     width: 40%;
     min-width: 280px;
+    border-right: none;
 }
 .pl_ri{
 	float: right;
@@ -211,12 +228,15 @@ ul.nav li:hover sup{
 	font-size:1.2em;
 }
 /* nav */
+.nav_top{
+	background-color: #fff;
+}
 .navbar{
 	margin-bottom: 0;
 	border:none;
 	border-radius: 0;
 }
-.navbar-default{
+.pcnone_nav{
 	background-color: #0065ce;
 	border-color: none;
 }
@@ -316,6 +336,9 @@ ul.nav li:hover sup{
 	padding:30px 30px 0 30px;
 }
 /* footer */
+.footer_section{
+	width: 100%;
+}
 .footer_logo{
 	background: url('../img/foot_logo.png');
 	width: 116px;
@@ -327,8 +350,7 @@ ul.nav li:hover sup{
 	float: left;
 	width: 80%;
 	margin-left: 4%;
-	height: 106px;
-	line-height: 106px;
+	padding-top: 40px;
 }
 .footer_main div{
 	float: left;
@@ -382,6 +404,7 @@ ul.nav li:hover sup{
 	border-bottom: 1px solid #dcdcdc;
 	position: relative;
 	z-index: 10;
+	cursor: pointer;
 }
 .product_main ul.top_list > li .menu_dropdown{
 	position: absolute;
@@ -540,6 +563,10 @@ ul.nav li:hover sup{
 .pro_details .product_big img{
 	width: 100%;
 }
+.jqzoom img{
+	width: 380px;
+	height: 380px;
+}
 
 /** ** login ** **/
 /* 2018.1.27 13:47 */
@@ -550,11 +577,16 @@ ul.nav li:hover sup{
 .login_main  form{
 	margin-bottom: 30px;
 }
+.login_total{
+	padding:80px 0;
+	margin: 80px 0;
+}
 .login_total .login_title{
 	width: 100%;
 	float: left;
 	text-align: left;
 	padding:10px 0 10px 15px;
+	font-size: 1.3em;
 }
 .bz_img{
 	width: 100%;
@@ -567,6 +599,17 @@ ul.nav li:hover sup{
 
 /** ** perisonal ** **/
 /* 2018.1.27 13:47 */
+.personal_content ul.per_content li.sec .per_text{
+	width: 100%;
+	margin: 0px;
+}
+.enquiry_email{
+	width: 100%;
+	float: left;
+}
+.ip_permain{
+	padding: 40px 0;
+}
 .pl_rilogin{
 	font-size:0.8em;
 }
@@ -678,6 +721,9 @@ ul.nav li:hover sup{
 .banner_head_Download img{
 	width: 100%;
 }
+.download_main{
+	padding: 40px 0;
+}
 .download_main h2{
 	font-size:1.6em;
 	margin: 0 0 20px;
@@ -745,10 +791,67 @@ ul.nav li:hover sup{
 /* 2018.1.28 14:12 */
 
 
-
-
-
-
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #0065cf;
+    transform: rotate(0deg);
+    transition: all 0.4s ease-in-out 0s;
+}
+.navbar-default .navbar-toggle:hover{
+	background:transparent;
+}
+.navbar-toggle .icon-bar{
+	height: 1px;
+}
+.navbar-toggle .icon-bar + .icon-bar{
+	margin-top: 6px;
+}
+.navbar-toggle{
+	margin-bottom: 0 !important;
+    padding: 8px 0 !important;
+}
+.navbar-default .click span.icon-bar1{
+	transform: rotate(45deg) translateX(1px);
+}
+.navbar-toggle{
+	margin-bottom: 0px;
+	margin-top: 24px;
+	border: none;
+}
+.header .navbar-nav > .click > a{
+	border-bottom: 1px solid #e7e7e7 !important;
+    color: #333 !important;	
+}
+.header .app_list ul li a{
+	border-bottom: 1px solid #e7e7e7;
+    color: #666;
+    margin: 16px 35px 5px 30px;
+    padding: 0 0 15px;
+    text-align: center;
+    background:transparent;
+}
+button.click .icon-bar:nth-child(3){
+	opacity: 0;
+}
+button.click .icon-bar + .icon-bar{
+	margin-top: 0px;
+}
+.navbar-default .click span.icon-bar2{
+	transform: rotate(-45deg) translateX(1px) translateY(-1px);
+}
+.app_search{
+	display: none!important;
+	float: right;
+	margin:26px 16px 0 0;
+	font-size:1.6em !important;
+	color: #0065cf;
+	cursor: pointer;
+}
+.navbar-default .navbar-toggle{
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background-color: #fff;
+}
 /* 图片放大镜 */
 /* 2018/1/26 17:16 */
 .jqzoom{
@@ -790,21 +893,8 @@ ul.nav li:hover sup{
 	display: inline-block;
 	width: 100%;
 }
-/* 响应式调整 */
-@media (max-width: 767px) {
-	.ip-none{
-		display: none;
-	}
-	#banner .banner-item:nth-child(1) .banner-img{
-		background-image: url('../img/ip_banner_1.jpg');
-	}
-	#banner .banner-item:nth-child(2) .banner-img{
-		background-image: url('../img/ip_banner_2.jpg');
-	}
-	.footer_main{
-		width: 100%;
-	}
-}
+
+
 
 
 

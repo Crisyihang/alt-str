@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Personal</title>
+	<title>Personal| Alt-Str</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrapValidator.css">
 	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/iphone.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
@@ -17,9 +17,26 @@
 	<!-- header -->
 	<div class="header navbar">
 		<div class="container">
-				<div class="navbar-header ">
+				<div class="navbar-header navbar-default nav_top">
 					<a class="pc_logo navbar-brand" href="#"></a>
+					<button type="button" class="navbar-toggle collapsed">
+	                    <span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar icon-bar1"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar icon-bar2"></span>
+               		 </button>
+               		 <i id="app_search" class="fa fa-search app_search"></i>
 				</div>
+				<div class="app_list collapse navbar-right" style="height: auto;display: none;">
+                <!-- Main navigation -->
+				        <ul class="nav navbar-nav">
+							<li class="click"><a>Home</a></li>
+							<li><a href="#">Product</a></li>
+							<li><a href="#">Download</a></li>
+							<li><a href="#">More</a></li>
+							<li><a href="#">About Us</a></li>
+				        </ul>
+            	</div>
 				<div class="navbar-collapse">
 					<div class="form_input">
 						<form>
@@ -27,14 +44,17 @@
 							<button class="zj_btn fa fa-search color_white fa-2x"></button>
 						</form>
 					</div>
-					<div class="pl_ri">
-						<a href="#" class="pl_ri_fi pl_rilogin">615871464@qq.com</a>
-						<a href="#" class="mar_le20 pl_ri_sc">Download</a>
+					<div class="pl_ri ip_none">
+
+						<a href="#" class="pl_ri_fi">
+							<i class="fa fa-user-circle-o fa-lg mar_ri12"></i>Login
+						</a>
 					</div>
 				</div>
+
 		</div>
 	</div>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default pcnone_nav">
 		<div class="container">
 			<div class="row">
 				<ul class="nav navbar-nav">
@@ -48,10 +68,10 @@
 						<a href="#">Download</a>
 					</li>
 					<li>
-						<a href="#">About Us</a>
+						<a href="#">More</a>
 					</li>
 					<li>
-						<a href="#">Contact Us</a>
+						<a href="#">About Us</a>
 					</li>
 				</ul>
 			</div>
@@ -60,24 +80,24 @@
 	<!-- header end -->
 
 	<!-- 面包屑 -->
-	<div class="container">
+	<div class="container ip_mb">
 		<div class="row">
-			<div class="pa_tb20 ">
+			<div class="pa_tb20 ip_jj">
 				<a href="#" class="fz_x_9">Home</a>
 				&nbsp
 				<span> > </span>
 				&nbsp
-				<span class="fz_x_9">Personal</span>
+				<a href="#" class="fz_x_9">Personal</a>
 			</div>
 		</div>
 	</div>
 	<!-- 面包屑 end-->
 
 	<!-- 主体 -->
-	<div class="bg_white pa_tb40">
+	<div class="bg_white ip_permain">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 personal_main">
+				<div class="col-md-3 col-xs-4 personal_main">
 					<div class="menu_list">
 						<h2 class="text_center pa_tb20 color_white fz_1x_2 fw_bold bg_personal">Personal</h2>
 					</div>
@@ -87,29 +107,22 @@
 								<i></i>
 								Enquiry Sheet
 							</div>
-							
-							
 						</li>
 						<li class="strarter_downmenu tran_5">
 							<div class=" text_center fw_bold">
 								<i></i>
 								Search Enquiry Sheet
 							</div>
-							
-							
 						</li>
 						<li class="ALTPart_downmenu tran_5">
 							<div class=" text_center fw_bold">
 								<i></i>
 								Log off
 							</div>
-							
-							
 						</li>
-						
 					</ul>
 				</div>
-				<div class="col-md-9">
+				<div class="col-md-9 col-xs-8  ip_personal_content">
 					<div class=" personal_content">
 						<ul class="per_content">
 							<li>
@@ -122,6 +135,10 @@
 										<img src="http://www.alt-str.com/home/image" />
 									</div>
 									<div class="fl_left fz_x_9 color_sub_font per_text">
+										<div class="enquiry_email">
+											<span class="fl_left">chenyihang@163.com</span>
+											<span class="fl_right">ChenYihang</span>
+										</div>
 										<span class="fl_left">Denso</span>
 										<span class="fl_left">Alternator- AT11627 </span>
 										<div class="intro_section">
@@ -141,11 +158,10 @@
 										</div>
 									</div>
 								</div>
-								
 							</li>
 							<li>
 								<div class="per_title">
-									<span class="fl_left">No.1</span>
+									<span class="fl_left">No.2</span>
 									<span class="fl_right">2018-1-16 21:00</span>
 								</div>
 								<div class="per_main">
@@ -153,6 +169,10 @@
 										<img src="http://www.alt-str.com/home/image" />
 									</div>
 									<div class="fl_left fz_x_9 color_sub_font per_text">
+										<div class="enquiry_email">
+											<span class="fl_left">chenyihang@163.com</span>
+											<span class="fl_right">ChenYihang</span>
+										</div>
 										<span class="fl_left">Denso</span>
 										<span class="fl_left">Alternator- AT11627 </span>
 										<div class="intro_section">
@@ -172,11 +192,10 @@
 										</div>
 									</div>
 								</div>
-								
 							</li>
 							<li>
 								<div class="per_title">
-									<span class="fl_left">No.1</span>
+									<span class="fl_left">No.3</span>
 									<span class="fl_right">2018-1-16 21:00</span>
 								</div>
 								<div class="per_main">
@@ -184,6 +203,10 @@
 										<img src="http://www.alt-str.com/home/image" />
 									</div>
 									<div class="fl_left fz_x_9 color_sub_font per_text">
+										<div class="enquiry_email">
+											<span class="fl_left">chenyihang@163.com</span>
+											<span class="fl_right">ChenYihang</span>
+										</div>
 										<span class="fl_left">Denso</span>
 										<span class="fl_left">Alternator- AT11627 </span>
 										<div class="intro_section">
@@ -203,7 +226,37 @@
 										</div>
 									</div>
 								</div>
-								
+							</li>
+							<li class="sec">
+								<div class="per_title">
+									<span class="fl_left">No.1</span>
+									<span class="fl_right">2018-1-16 21:00</span>
+								</div>
+								<div class="per_main">
+									<div class="fl_left fz_x_12 color_sub_font per_text">
+										<div class="enquiry_email">
+											<span class="fl_left">chenyihang@163.com</span>
+											<span class="fl_right">ChenYihang</span>
+										</div>
+										<span class="fl_left">Denso</span>
+										<span class="fl_left">Alternator- AT11627 </span>
+										<div class="intro_section">
+											<h4>Message:</h4>
+											<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</p>
+										</div>
+										<div class="sub_imgs">
+											<div class="sub_poimgs">
+												<img src="#">
+											</div>
+											<div class="sub_poimgs">
+												<img src="#">
+											</div>
+											<div class="sub_poimgs">
+												<img src="#">
+											</div>
+										</div>
+									</div>
+								</div>
 							</li>
 						</ul>
 						<div aria-label="Page navigation" class="text_center">
@@ -237,37 +290,41 @@
 
 	<!-- footer -->
 	<footer class="footer_section">
-		<div class="bg_main pa_tb40">
-			<div class="container">
-				<div class="row">
-					<div class="app_tz">
-						<div class="footer_logo"></div>
-					</div>
-					<div class="footer_main">
-						<div class=" text_center">
-							<i class="fa  fa-map-marker fa-2x-6  color_white "></i>
-							<span class="color_white pa_le06" style="display: inline-block;">No.596, Yangshu Rd</span>
-						</div>
-						<div class="text_center">
-							<i class="fa fa-at fa-2x-6  color_white"></i>
-							<span class="color_white pa_le06">info@alt-str.com</span>
-						</div>
-						<div class=" text_center">
-							<i class="fa fa-phone fa-2x-6  color_white"></i>
-							<span class="color_white pa_le06">+86-512-50352985</span>
-						</div>
-						<div class=" text_center">
-							<i class="fa fa-fax fa-2x-6  color_white"></i>
-							<span class="color_white pa_le06">+86-21-23010211</span>
+			<div class="bg_main pa_tb40">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="app_tz">
+								<div class="footer_logo"></div>
+							</div>
+							<div class="footer_main">
+								<div class=" text_center">
+									<i class="fa  fa-map-marker fa-2x-6  color_white "></i>
+									<span class="color_white pa_le06" style="display: inline-block;">No.596, Yangshu Rd</span>
+								</div>
+								<div class="text_center">
+									<i class="fa fa-at fa-2x-6  color_white"></i>
+									<span class="color_white pa_le06">info@alt-str.com</span>
+								</div>
+								<div class=" text_center">
+									<i class="fa fa-phone fa-2x-6  color_white"></i>
+									<span class="color_white pa_le06">+86-512-50352985</span>
+								</div>
+								<div class=" text_center">
+									<i class="fa fa-fax fa-2x-6  color_white"></i>
+									<span class="color_white pa_le06">+86-21-23010211</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="bg_sub_black text_center pa_tb20">
-			<p class="color_white">Copyright© 2006-2018 Alt-Str.com. All rights reserved.</p>
-		</div>
+			<div class="bg_sub_black text_center pa_tb20 footer_end">
+				<p class="color_white">Copyright© 2006-2018 Alt-Str.com. All rights reserved.</p>
+			</div>
 	</footer>
+	<!-- footer end -->
+	<div class="bg_div"></div>
 	<div class="overing"></div>
 	<div class="pannel">
 		<div class="cont">

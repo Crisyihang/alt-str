@@ -267,6 +267,12 @@ ul.nav li:hover sup{
 }
 
 /* section_1 */
+.carouse_text{
+	padding:40px 0;
+}
+.video_div{
+	padding:60px 0;
+}
 .introduction{
 	padding: 20px 0;
 }

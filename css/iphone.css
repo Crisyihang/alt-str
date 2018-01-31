@@ -5,8 +5,14 @@
 	 .pro_details .ip_prodes{
 		margin-left: 0px;
 	}
+	.pl_ri_fi{
+		font-size:1em;
+	}
 }
 @media screen and (max-width: 990px) {
+	.pl_ri_fi{
+		font-size:0.9em;
+	}
 	.footer_main{
 		margin-left: 0px;
 		padding-top: 0px;
@@ -52,6 +58,7 @@
 	}
 }
 @media screen and (max-width: 767px) {
+
 	/* home */
 	.ip_none,.pcnone_nav{
 		display: none;
@@ -109,8 +116,8 @@
 	.bg_main{
 		padding: 14px 0;
 	}
-	.mar_tpb5{
-		margin-top: 5%;
+	.carouse_text{
+		padding:22px 0;
 	}
 	.carousel p{
 		line-height: 18px;
@@ -159,8 +166,14 @@
 		width: 88%;
 		margin: 0 6%;
 	}
+	.qdpadding{
+		padding-left: 0px;
+	}
 
 	/* others */
+	.form-group textarea{
+
+	}
 	.ip_jj{
 		margin: 0 15px;
 	}
@@ -247,8 +260,29 @@
 	.bz_img{
 		padding-top: 0px;
 	}
+	.form-group select{
+		padding-right: 0px;
+	}
+	.bd_button{
+		width: 32%;
+	}
+	.carousel-indicators .active,.carousel-indicators li{
+		width: 20px;
+	}
+	.carousel .item{
+		height: 130px;
+	}
+	.video_div{
+		padding:20px 0;
+	}
+	.carousel-control.left, .carousel-control.right{
+		display: none;
+	}
 }
 @media screen and (max-width: 600px){
+	.form-group select{
+		font-size:0.9em;
+	}
 	.footer_main > div {
 		font-size:0.9em;
 	}
